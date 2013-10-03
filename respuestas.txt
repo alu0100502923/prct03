@@ -1,0 +1,115 @@
+18.Escriba el programa que muestra por la consola la frase
+"Hola Mundo". ¿Qué significado tiene la salida? (puts ’Hola Mundo’)
+-El comando puts te muestra por pantalla lo escrito a continuación y como no devuelve nada te devuelve un nil.
+
+21.¿Qué diferencia hay entre"\t\n" y ’\t\n’?
+-Con las dobles comillas ("") pone directamente el espacio y salto de linea, y con las comillas simples ('') te escribe porpantalla \t\n.
+
+22.¿Cómo funciona %q? ¿Qué es %q{hello world\n}?¿Qué es %q{’a’ ’b’ ’c’}?
+-La q funciona como las comillas simples.
+
+23.¿Cómo funciona %Q? ¿Qué es %Q{hello world\n}?¿Qué es %Q{’a’ ’b’ ’c’}?
+-La Q funciona como las comillas dobles.
+
+24.¿Qué queda en c?
+-En c se almacena la sentencia con los valores de a y b: "--4--\n--2--\n"
+
+25.¿Qué queda en c?
+-En c se almacena la sentencia literalmente: "--\#{a}--\n--\#{b}--\n"
+
+26.¿Cuál es el valor de las siguientes expresiones?
+
+s[0,2] = "he"
+s[-1,1]= "o"
+s[0,10]= "hello"
+
+27.¿Qué queda en g?
+- "helloworld"
+
+28.¿Qué queda en e?
+- "..."
+
+29.¿Cual es el resultado?
+-"2 2 2"
+
+30.¿Qué es esto? %w[this is a test]
+-Te muestra cada palabra de la frase separadas por comillas
+
+31.¿Qué es esto? %w[\t \n]
+
+32.¿Qué es esto? %W[\t \n]
+
+33.¿Qué contiene nils? nils = Array.new(3)
+- [nil, nil, nil]
+
+34. ¿Qué contiene zeros? zeros = Array.new(3, 0)
+-[0, 0, 0]
+
+35. ¿Qué queda en b?
+-[[1, 2], [3, 4]]
+
+36.¿Què queda en c?
+-[0, 2, 4]
+
+37.¿Cuál es el resultado de cada una de estas operaciones?
+
+>>a[1,1]
+=> ["b"]
+>> a[-2,2]
+=> ["d", "e"]
+>> a[0..2]
+=> ["a", "b", "c"]
+>> a[0...1]
+=> ["a"]
+>> a[-2..-1]
+=> ["d", "e"]
+
+38.¿Cuál es el resultado de cada una de estas operaciones?
+>> a
+=> ["a", "b", "c", "d", "e"]
+>> a[0,2] = %w{A B}
+=> ["A", "B"]
+>> a
+=>["A", "B", "c", "d", "e"]
+>> a[2..5] = %w{C D E}
+=> ["C", "D", "E"]
+>> a
+=>["A", "B", "C", "D", "E"]
+>> a[0,0] = [1,2,3]
+=> [1, 2, 3]
+>> a
+=> [1, 2, 3, "A", "B", "C", "D", "E"]
+>> a[0,2] = []
+=> []
+>> a
+=>[3, "A", "B", "C", "D", "E"]
+>> a[-1,1] = [ ’Z’ ]
+=> ["Z"]
+>> a
+=>[3, "A", "B", "C", "D", "Z"]
+>> a[-2,2] = nil
+=> nil
+>> a
+=>[3, "A", "B", "C"]
+
+39.¿Cuál es el resultado de cada una de estas operaciones?
+
+>> a = (1...4).to_a
+=>
+>> a = a + [4, 5]
+=>
+>> a += [[6, 7, 8]]
+=>
+>> a = a + 9
+
+
+
+
+
+
+
+
+
+
+
+
